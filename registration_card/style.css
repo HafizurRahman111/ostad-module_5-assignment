@@ -1,0 +1,110 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #89d9e4, #4cae9d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 700px;
+    height: auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #424242;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    flex: 0 0 48%;
+}
+
+label {
+    width: 75%;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    color: #363636;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.form-group.full-width {
+    flex: 0 0 100%;
+}
+
+.gender-options {
+    display: flex;
+    align-items: center;
+}
+
+.gender-options input[type="radio"] {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.submit-btn {
+    text-align: left;
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    background: linear-gradient(135deg, #6fe073, #246327);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #45a049, #1B5E20);
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cancel-btn {
+    background: #fa3232;
+}
+
+.cancel-btn:hover {
+    background: #e40d0d;
+}
